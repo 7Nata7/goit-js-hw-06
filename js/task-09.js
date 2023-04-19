@@ -10,9 +10,13 @@ const body = document.body
 
 changeBtn.addEventListener('click', () => {
 
+  // !Variant 1
 const color = getRandomHexColor()
-body.style.backgroundColor = getRandomHexColor()
+body.style.backgroundColor = color
 colorSpan.textContent = color
+
+  // !Variant 2
+// body.style.backgroundColor = getRandomHexColor()
+// colorSpan.textContent = getRandomHexColor()
 }
 )
-
